@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab";
+}
+
+:root {
+  --Color: #3cc7e1;
+}
+
+.bienvenido {
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  color: #1f1f1f;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+.bienvenido:first-of-type {
+  font-size: 1em;
+}
+
+.bba {
+  color: #1f1f1f;
+  font-family: Poppins;
+  font-size: 18.194px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.91px;
+  text-transform: capitalize;
+}
+
+.nav {
+  display: inline;
+  float: right;
+
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+/* Estilo para la barra de navegación */
+nav {
+  z-index:2;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(
+    1deg,
+    rgb(64 166 202 / 66%) 0%,
+    rgba(97, 217, 255, 0.41) 72.65%
+  );
+  overflow: hidden;
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+nav a:hover {
+  background-color: #3cc7e1b0;
+  color: white;
+  border-radius: 12px;
+  animation-name: cambiColor;
+  animation-duration: 5s infinite;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.foto {
+  width: 20.125rem;
+  height: 18.375rem;
+  flex-shrink: 0;
+  border-radius: 9.1875rem;
+  background-image: url("img/foto.jpg");
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bloque {
+  margin-top: 10%;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton {
+  width: 15rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: var(
+    --Color,
+    linear-gradient(180deg, #3cc7e1 99.99%, #01276a 100%)
+  );
+  color: white;
+  border: 0;
+}
+
+.fontEstudiante {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.01863rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.parteIzq {
+  padding: 3em;
+}
+
+.sobreMi {
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+  height: 33rem;
+  flex-shrink: 0;
+  border-radius: 0rem 5.5rem 0rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.41) 0%,
+    rgba(97, 217, 255, 0.41) 72.65%
+  );
+  box-shadow: 83px 16px 52px 0px rgba(0, 0, 0, 0.25);
+}
+.sobreMi h3 {
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.textoSobreMi {
+  padding: 2rem;
+  width: 32rem;
+  height: 13rem;
+  flex-shrink: 0;
+  color: #1f1f1f;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.04375rem;
+  text-transform: capitalize;
+}
+
+.habilidades {
+  padding: 5rem;
+  background-color: white;
+  display: flex;
+  height: 30%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.caja {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.textoHabilidades {
+  /* Arriba | Derecha | Abajo | Izquierda */
+  margin: 0.5rem 0 0 5rem;
+  color: #1f1f1f;
+  font-size: 3rem;
+  line-height: normal;
+  letter-spacing: 0.1765rem;
+  text-transform: capitalize;
+}
+
+hr {
+  margin: 5rem 0 0 5rem;
+  border: 1px solid black;
+  width: 10%;
+}
+
+.idiomas {
+}
+
+.bloque div h3 {
+  color: #1f1f1f;
+  font-size: 3.53013rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1765rem;
+  text-transform: capitalize;
+}
+
+.bloque div hr {
+  border: 1px solid black;
+  width: 95%;
+  margin: 0;
+}
+
+.mi-clase {
+  border-radius: 3.125rem;
+  background: linear-gradient(90deg, #3c1dff 18.63%, #14c9c9 78.88%);
+  width: 30rem;
+  height: 1.51875rem;
+  flex-shrink: 0;
+}
+.mi-clasePortugues {
+  border-radius: 3.125rem;
+  background: linear-gradient(90deg, #3c1dff 18.63%, #14c9c9 78.88%);
+  width: 20rem;
+  height: 1.51875rem;
+  flex-shrink: 0;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #3cc7e1;
+}
+.estudios {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.estudios div {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  position: absolute;
+}
+
+svg:nth-of-type(1) {
+  z-index: 1;
+}
+
+svg:nth-of-type(2) {
+  z-index: 2;
+}
+
+.linea {
+  width: 100%;
+  padding-left: 2rem;
+  border-top: 1px solid black;
+  position: relative;
+}
+
+.linea h3 {
+  z-index: 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: white;
+  position: absolute;
+  top: -2.7rem; /* Ajusta este valor según el tamaño de tu texto */
+  left: 20%;
+  transform: translateX(-50%);
+  color: #1f1f1f;
+  font-size: 3.53013rem;
+  font-style: normal;
+  letter-spacing: 0.1765rem;
+  text-transform: capitalize;
+}
+
+.proyectos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.proyectos img {
+  width: 30%;
+  height: 30%;
+  padding: 2rem;
+}
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.cv h3 {
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.cv p {
+  padding: 1rem;
+}
+
+.espaniol {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.btn-minimalista {
+  background-color: #3cc7e1;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 15px;
+}
+
+.btn-minimalista:hover {
+  background-color: white;
+  color: #3cc7e1;
+}

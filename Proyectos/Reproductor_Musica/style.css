@@ -1,0 +1,188 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+*{
+    margin:0px;
+    padding:0px;
+    color:white;
+    font-family: 'Roboto';
+}
+
+body{
+    height:120vh;
+    width:100%;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    height:100%;
+    width:33rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecera{
+    width:100%;
+    height:10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imagen{
+    width:100%;
+    height:61%;
+    display: flex;
+    justify-content: center;
+}
+.imagen img{
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
+}
+.tiempo{
+    height: 1rem;
+    width: 1rem;
+    color: white;
+}
+.rango{
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:1rem;
+}
+.rango .b{
+    width: 90%;
+}
+
+.rango input[type="range"]{
+    width: 93%;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background: #898989;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: white; /* Cambia esto al color que prefieras */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.infoCancion{
+    height:10%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.autor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.botonesReproduccion{
+    height:13%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button{
+    background-color:white;
+    border-radius:100%;
+    box-shadow: 0px 9px 10px -9px rgba(0,0,0,0.75);
+    //width:10%;
+    //height:50%;
+    width:3.5rem;
+    height:3.5rem;
+    border:none;
+    margin:10px;
+    transition: 0.5s;
+    cursor:pointer;
+    
+}
+
+button:hover{
+    transform: scale(1.4, 1.4); 
+    border:1px solid black;
+    box-shadow: 1px 13px 28px -5px rgba(0,0,0,0.75);
+}
+.active{
+    border:1px solid black;
+    box-shadow: 1px 13px 28px -5px rgba(0,0,0,0.75);
+    transform: scale(1.4, 1.4); 
+}
+
+.aleatorio img{
+    height: 24px;
+    width: 24px;
+}
+.anterior img{
+    height: 24px;
+    width: 24px;
+}
+.playPause img{
+    height: 24px;
+    width: 24px;
+}
+.siguiente img{
+    height: 24px;
+    width: 24px;
+}
+.bucle img{
+    height: 24px;
+    width: 24px;
+}
+
+.lista{
+    width: 100%;
+    height: 20%;
+    margin:1px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.cancion{
+    height: 2rem;
+    width: 100%;
+    color: white;
+    margin:3px;
+    background-color:#ffffff36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    cursor:pointer;
+}
+.volumen{
+    appearance: slider-vertical;
+    height:4rem;
+    background:transparent;
+}
+
+.volumen::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background: #898989;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+} 
+.infoCancion div{
+    display: flex;
+}

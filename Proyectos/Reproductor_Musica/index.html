@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
+    <title>Reproductor</title>
+</head>
+<body>
+    <main>
+        <div class="cabecera">
+            <h1>Reproduciendo</h1>
+        </div>
+        <div class="imagen">
+            <img src="img/fondo2.jpg" alt="">
+
+        </div>
+        <div class="rango">
+            <div>
+                <p id="tiempo" value="">0:00</p>
+            </div>
+            <div class="b">
+                <input type="range" class="duracion" id="barra" value="0" min="0" max="1" step="0.01">
+            </div>
+        </div>
+
+        <div class="infoCancion">
+            <div class="autor">
+                <p id="autor">Autor</p>
+                <p id="nombreCancion">Cancion</p>
+            </div>
+            <div>
+                <input type="range" class="volumen" id="volumen" min="0" max="1" step="0.01">
+            </div>
+        </div>
+
+        <div class="botonesReproduccion">
+            <button class="aleatorio" id="aleatorio"><img src="icon/aleatorio.svg" alt="aleatorio"></button>
+            <button class="anterior" id="anterior"><img src="icon/atras.svg" alt="anterior"></button>
+            <button class="playPause" id="playPause"><img src="icon/play_pause.svg" alt="play-pause"></button>
+            <button class="siguiente" id="siguiente"><img src="icon/delante.svg" alt="siguiente"></button>
+            <button class="bucle" id="bucle"><img src="icon/bucle.svg" alt="repetir"></button>
+
+        </div>
+        <div class="lista" id="lista">
+            
+
+        </div>
+        
+
+    </main>
+    
+    
+</body>
+</html>

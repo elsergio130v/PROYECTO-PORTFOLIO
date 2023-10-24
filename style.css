@@ -51,11 +51,7 @@ nav {
   top: 0;
   width: 100%;
   position: fixed;
-  background: linear-gradient(
-    1deg,
-    rgb(64 166 202 / 66%) 0%,
-    rgba(97, 217, 255, 0.41) 72.65%
-  );
+  background: linear-gradient( 1deg, rgb(233 249 255) 0%, rgb(97 217 255) 72.65% );
   overflow: hidden;
 }
 

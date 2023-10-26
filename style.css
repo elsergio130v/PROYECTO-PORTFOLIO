@@ -149,7 +149,6 @@ ul {
 
 .textoSobreMi {
   padding: 2rem;
-  width: 32rem;
   height: 13rem;
   flex-shrink: 0;
   color: #1f1f1f;
@@ -259,7 +258,6 @@ svg:nth-of-type(2) {
 }
 
 .linea {
-  width: 100%;
   padding-left: 2rem;
   border-top: 1px solid black;
   position: relative;

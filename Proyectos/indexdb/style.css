@@ -1,0 +1,95 @@
+body{
+    background-color:#3dd3c640;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.notas{
+    height:400px;
+    width:400px;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.topbar{
+    height:70px;
+    width:100%;
+    background-color: aqua;
+    border-radius: 20px 20px 0px 0px;
+}
+.text{
+    width: 90%;
+    height: calc(100% - 90px);
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    resize:none;
+    background-color:#e7e7e7; 
+    padding: 10px; 
+}
+.text:active{
+  border-block-color: black;
+}
+
+
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: fixed;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  top: 1rem;
+  right: 1rem;
+  width:100px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+#delete{
+  height: 48px;
+  width:100px;
+  top: 5rem;
+  right: 1rem;
+
+}
+

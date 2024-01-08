@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  color:white;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('img/FotoRegistro.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+main {
+  padding-top: 8%;
+  width: fit-content;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: #007bff; /* Color de fondo del botón (azul en este ejemplo) */
+  color: #fff; /* Color del texto (blanco en este ejemplo) */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  font-size: 16px; /* Tamaño del texto */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  background: #0000008f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 14px;  
+}
+
+.containerInput {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+}
+
+.condiciones {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 10px 0;
+}
+
+.condiciones label {
+  margin-right: 10px;
+}
+
+.condiciones input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.success {
+  border: solid 3px green;
+  width: 200px;
+  height: 35px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  border-radius: 12px;
+  color: black;
+}
+
+.error {
+  border: solid 2px red;
+  width: 200px;
+  height: 35px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  border-radius: 12px;
+  color: black;
+}
+
+.input-minimalista {
+  width: 200px;
+  height: 35px;
+  border: none;
+  margin: 10px 0;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  border-radius: 12px;
+  color:black;
+}
+
+.input-minimalista:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  color: black;
+}
+
+.notAvailable {
+  cursor: default;
+  background: #fff7d1;
+  opacity: 30%;
+  color: black
+}

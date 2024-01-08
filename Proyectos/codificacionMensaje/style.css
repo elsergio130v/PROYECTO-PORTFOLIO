@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://blogs.xunta.gal/xentedixital/wp-content/uploads/sites/3/2017/02/Cifrado.jpeg);
+    width:100%;
+    height:100vh;
+}
+
+div{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffab;
+    width: 50%;
+    height: 50%;
+}
